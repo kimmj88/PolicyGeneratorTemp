@@ -1,0 +1,18 @@
+{
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "stores": ["./src/stores/index.ts"],
+      "components/*": ["./src/components/*"],
+      "boot": ["./src/boot/index.ts"],
+      "database/*": ["./src-electron/database/*"],
+      "service": ["src-electron/service/index.ts"],
+      "controller": ["src-electron/controller/index.ts"],
+      "commonBack": ["src-electron/commonBack/index.ts"]
+    },
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": false,
+    "moduleDetection": "force"
+  }
+}

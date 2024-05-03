@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+actor "customer" as fc
+rectangle PolicyGenerator {
+  usecase "Create Policy" as UC1
+  usecase "Import DBC" as UC2
+  usecase "Create Rule(BUS,MSG,SIG)" as UC3
+  usecase "Create Binary" as UC4
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+fc --> UC4
+@enduml
